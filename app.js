@@ -15,9 +15,9 @@ var buttons = document.getElementsByClassName("button");
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
         var key = buttons[i].getAttribute('data-key');
-        selector(key)
-    };
-};
+        selector(key);
+       });
+}
 
 
 // Init lottie animation.
