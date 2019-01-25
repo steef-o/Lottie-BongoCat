@@ -9,33 +9,15 @@ const note3_e = document.getElementById('note3_e');
 const note4_f = document.getElementById('note4_f');
 const note5_g = document.getElementById('note5_g');
 const note6_a = document.getElementById('note6_a');
-let mobilekey = "";
 
-document.getElementById("c-note-button").addEventListener("click", function () {
-    mobilekey = "a";
-    selector(mobilekey);
-});
-document.getElementById("d-note-button").addEventListener("click", function() {
-    mobilekey = "s";
-    selector(mobilekey);
-});
-document.getElementById("e-note-button").addEventListener("click", function() {
-    mobilekey = "d";
-    selector(mobilekey);
-});
-document.getElementById("f-note-button").addEventListener("click", function() {
-    mobilekey = "f";
-    selector(mobilekey);
-});
-document.getElementById("g-note-button").addEventListener("click", function() {
-    mobilekey = "j";
-    selector(mobilekey);
-});
-document.getElementById("a-note-button").addEventListener("click", function() {
-    mobilekey = "k";
-    selector(mobilekey);
-});
-
+// Add listeners for mobile buttons
+var buttons = document.getElementsByClassName("button");
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+        var key = buttons[i].getAttribute('data-key');
+        selector(key)
+    };
+};
 
 
 // Init lottie animation.
