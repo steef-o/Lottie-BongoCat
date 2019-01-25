@@ -10,15 +10,13 @@ const note4_f = document.getElementById('note4_f');
 const note5_g = document.getElementById('note5_g');
 const note6_a = document.getElementById('note6_a');
 
-// Add listeners for mobile buttons
-var buttons = document.getElementsByClassName("button");
-for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function() {
-        var key = buttons[i].getAttribute('data-key');
-        selector(key);
-       });
-}
-
+// Get Mobile button input
+document.getElementById("c-note-button").addEventListener("click", function () { selector("a"); });
+document.getElementById("d-note-button").addEventListener("click", function () { selector("s"); });
+document.getElementById("e-note-button").addEventListener("click", function () { selector("d"); });
+document.getElementById("f-note-button").addEventListener("click", function () { selector("f"); });
+document.getElementById("g-note-button").addEventListener("click", function () { selector("j"); });
+document.getElementById("a-note-button").addEventListener("click", function () { selector("k"); });
 
 // Init lottie animation.
 const bongoCat = lottie.loadAnimation({
@@ -34,9 +32,7 @@ bongoCat.addEventListener('data_ready', function () {
     //Listen for keyboard input (a,s,d,f,j,k = valid inputs).
    window.addEventListener('keypress', function (e) {
        selector(e.key);
-
     });
-
 });
 
 // Helper function to play notes.
