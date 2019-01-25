@@ -68,4 +68,6 @@ Bongo Cat.aep
 bongo-cat.ai
 node_modules/
 vcs.xml
+.idea
 
+'.idea' 
