@@ -1,3 +1,13 @@
 #bongo-cat{
    /* max-width: 1000px; */
 }
+
+@media (min-width: 500px) {
+    .row{
+        display: none;
+    }
+
+    .box{
+        text-align: center;
+    }
+}
