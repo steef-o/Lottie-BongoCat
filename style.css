@@ -2,12 +2,16 @@
    /* max-width: 1000px; */
 }
 
-@media (min-width: 500px) {
-    .row{
-        display: none;
-    }
+.buttons {
+    margin-left: 5px;
+}
 
-    .box{
-        text-align: center;
-    }
+.buttons:first-child{
+    margin-left:40px;
+}
+
+.buttons:last-child{
+    margin-left:5px;
+    margin-right:40px;
+    margin-bottom: 1rem;
 }

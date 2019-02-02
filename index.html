@@ -8,7 +8,6 @@
 
     <!-- bulma CSS framework -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Lottie - Bongo Cat</title>
 </head>
@@ -16,39 +15,15 @@
 <!-- Content container -->
 <div class="container">
     <!-- Animation container -->
-    <div id="bongo-cat"></div>
-
-    <div class="row">
-        <div class="col-xs-2">
-            <div class="box" id="c-note-button">
-                <p>C</p>
-            </div>
-        </div>
-        <div class="col-xs-2" id="d-note-button">
-            <div class="box">
-                <p>D</p>
-            </div>
-        </div>
-        <div class="col-xs-2" id="e-note-button">
-            <div class="box">
-                <p>E</p>
-            </div>
-        </div>
-        <div class="col-xs-2" id="f-note-button">
-            <div class="box">
-                <p>F</p>
-            </div>
-        </div>
-        <div class="col-xs-2" id="g-note-button">
-            <div class="box">
-                <p>G</p>
-            </div>
-        </div>
-        <div class="col-xs-2" id="a-note-button">
-            <div class="box">
-                <p>A</p>
-            </div>
-        </div>
+    <div id="bongo-cat" class="block"></div>
+    <div class="columns is-mobile is-8 is-offset-2 block is-hidden-tablet">
+        <div class="column has-text-white has-background-primary buttons" id="c-note-button">C</div>
+        <div class="column has-text-white has-background-primary buttons" id="d-note-button">D</div>
+        <div class="column has-text-white has-background-primary buttons" id="e-note-button">E</div>
+        <div class="column has-text-white has-background-primary buttons" id="f-note-button">F</div>
+        <div class="column has-text-white has-background-primary buttons" id="g-note-button">G</div>
+        <div class="column has-text-white has-background-primary buttons" id="a-note-button">A</div>
+    </div>
 </div>
 
 
